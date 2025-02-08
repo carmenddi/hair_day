@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  text-align: left;
+  background-color: rgb(44, 42, 42);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Gallery*/
+#gallery {
+  width: 70vw;
+  height: auto;
+  margin: 0  auto 3rem;
+}
+
+/*Navigation*/
+header .logo {
+  display: block;
+  margin: 1.5rem auto;
+  width: 45rem;
+}
+
+hr {
+  width: 65%;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 4rem;
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul a:hover,
+#contacts a:hover {
+  color: rgb(109, 176, 169);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  max-width: 30rem;
+  height: 100%;
+  background-color:#2d2d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 5;
+  padding-top: 6rem;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+
+.sidebar a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.hamburger-icon, .close-icon {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  font-size: 2.5rem;
+  color:#fff;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+/*Banner*/
+
+.banner {
+  background-image: url(images/prova_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 35rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 7rem;
+  margin: 0 auto;
+  font-weight: 200;
+  width: 90vw;
+}
+
+h1 span {
+  color: rgb(109, 176, 169);
+}
+
+.banner p {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/*Cards*/
+.cards .card h2, .title h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.cards .card h2 {
+  font-size: 3rem;
+}
+
+.title h2 {
+  font-size: 5rem;
+}
+
+.cards {
+  margin: 3rem 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  background-color: rgb(52, 51, 51);
+  margin: 2rem;
+}
+
+.card img {
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  height: 27rem;
+  width: 27rem;
+}
+
+.card p {
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+#page:hover {
+  box-shadow: 1px 1px 2px black, 0 0 25px rgb(109, 176, 169);
+}
+
+.title h2 {
+  font-size: 5rem;
+  margin-top: 3rem;
+}
+
+/*Footer*/
+.contacts img {
+  width: 15rem;
+  height: auto;
+  margin-left: 3rem;
+}
+
+footer {
+  padding: 3rem 0;
+}
+
+footer p {
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+#contacts a {
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  display: block;
+}
+
+#contacts {
+  margin-top: 3rem;
+}
+
+a img {
+  width:2rem;
+  padding-right:1rem;
+}
+
+/*Route What we are*/
+.description img {
+  width: 35vw;
+}
+
+.description {
+  display: flex;
+  margin: 3rem 0;
+}
+
+.about {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.description p {
+  margin-right:3rem;
+  font-size: 2rem;
+  align-content: center;
+  font-family: 'Raleway', 'sans serif';
+}
+
+/*Form*/
+
+.reservation-form {
+  max-width: 40vw;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgb(52, 51, 51);
+  border-radius: 8px;
+}
+
+.reservation-form label {
+  display: block;
+  margin: 0.6rem 0 0.8rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.reservation-form input {
+  border-radius: 8px;
+  border: none;
+}
+.toedit input {
+  width: 40vw;
+  height: 1.8rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.checkbox-item span {
+  margin-left: 0.5rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.87rem;
+}
+
+button {
+  padding: 1rem;
+  background-color: rgb(109, 176, 169);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button:hover {
+  background-color: rgb(82, 118, 114);
+}
+
+/*Modal window*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: rgb(52, 51, 51);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 0.7rem;
+}
+
+.modal-content button {
+  margin-top: 1.2rem;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+
+.card img {
+    width: 85%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 5rem;
+    padding-top: 5rem;
+  }
+
+  h1 p {
+    font-size: 4rem;
+    margin-right: 5rem;
+  }
+
+  .cards, .description {
+    display: block;
+  }
+
+  .description img {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  hr {
+    display: none;
+  }
+
+  }
+
+/* Smartphone */
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    body {
+        width: 100%;
+      }
+
+      header img {
+        width: 40%;
+        height: auto;
+      }
+
+      .banner {
+        width: 100vw;
+        text-align: center;
+    }
+
+      .card img {
+        width: 85%;
+        height: auto;
+      }
+
+      h1 {
+        font-size: 4rem;
+        padding-top: 4rem;
+      }
+
+      h1 p {
+        font-size: 2rem;
+        padding: 0 4rem;
+      }
+
+      .cards, .description {
+        display: block;
+      }
+
+      .description img {
+        width: 60vw;
+        margin: 3rem auto;
+      }
+
+      .nav-bar{
+        overflow: hidden;
+    }
+
+    .nav-links {
+      display: block;
+    }
+
+    hr {
+      display: none;
+    }
+
+    header .logo {
+      width: 35%;
+    }
+
+}
