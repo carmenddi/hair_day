@@ -9,7 +9,7 @@ export default function Cards() {
   const location = useLocation();
 
   useEffect(() => {
-    const scrollAmount = window.innerWidth < 1024 ? 850 : 300; 
+    const scrollAmount = window.innerWidth < 1024 ? 850 : 300;
 
     window.scrollBy({
       top: scrollAmount,
