@@ -5,7 +5,6 @@ import Styling from './images/styling.jpeg';
 import Termin from './images/termin.jpeg';
 
 export default function Cards() {
-  const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
