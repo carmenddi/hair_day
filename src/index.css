@@ -34,7 +34,7 @@ body {
 header .logo {
   display: block;
   margin: 1.5rem auto;
-  width: 45rem;
+  width: 40%;
 }
 
 hr {
@@ -102,7 +102,7 @@ ul a:hover,
   position: absolute;
   right: 5%;
   top: 2%;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color:#fff;
   z-index: 10;
   cursor: pointer;
@@ -377,41 +377,36 @@ button:hover {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
     body {
-        width: 100%;
+      width: 100%;
       }
 
-      header img {
-        width: 40%;
-        height: auto;
-      }
-
-      .banner {
-        width: 100vw;
-        text-align: center;
-        height: 40vh;
+    .banner {
+      width: 100vw;
+      text-align: center;
+      height: 40vh;
     }
 
-      h1 {
-        font-size: 4rem;
-        padding-top: 4rem;
-      }
+    h1 {
+      font-size: 4rem;
+      padding-top: 4rem;
+    }
 
-      h1 p {
-        font-size: 2rem;
-        padding: 0 4rem;
-      }
+    h1 p {
+      font-size: 2rem;
+      padding: 0 4rem;
+    }
 
-      .cards, .description {
-        display: block;
-      }
+    .cards, .description {
+      display: block;
+    }
 
-      .description img {
-        width: 60vw;
-        margin: 3rem auto;
-      }
+    .description img {
+      width: 60vw;
+      margin: 3rem auto;
+    }
 
-      .nav-bar{
-        overflow: hidden;
+    b.nav-bar{
+      overflow: hidden;
     }
 
     .nav-links {
@@ -421,5 +416,15 @@ button:hover {
     header .logo {
       width: 35%;
     }
+
+    hr {
+      margin: 1rem auto;
+    }
+
+    .hamburger-icon, .close-icon {
+      top: 2%;
+      font-size: 1.7rem;
+    }
+
 
 }
