@@ -238,12 +238,12 @@ a img {
 
 .description {
   display: flex;
+  gap:2rem;
   margin: 3rem 0;
-  gap:4rem;
 }
 
 .about {
-  width: 70vw;
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -369,7 +369,7 @@ button:hover {
 
   .description img {
     width: 80vw;
-    margin: 0 auto;
+    margin: 2rem auto;
   }
   }
 
