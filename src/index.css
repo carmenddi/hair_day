@@ -351,7 +351,7 @@ button:hover {
   }
 
   .banner {
-    height: 50vh;
+    height: 60vh;
     text-align: center;
   }
 
@@ -383,7 +383,7 @@ button:hover {
     .banner {
       width: 100vw;
       text-align: center;
-      height: 40vh;
+      height: 50vh;
     }
 
     h1 {
@@ -392,7 +392,7 @@ button:hover {
     }
 
     h1 p {
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding: 0 4rem;
     }
 
