@@ -46,13 +46,6 @@ hr {
 nav ul {
   list-style: none;
   text-align: center;
-  margin-top: 2rem;
-}
-
-nav li {
-  display: inline-block;
-  padding-right: 4rem;
-  font-size: 2rem;
 }
 
 a {
@@ -63,6 +56,17 @@ a {
 ul a:hover,
 #contacts a:hover {
   color: rgb(109, 176, 169);
+}
+
+.nav-links {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  font-size: 2.4rem;
+}
+
+.nav-bar {
+  margin: 2rem 0;
 }
 
 /* Sidebar */
@@ -113,7 +117,7 @@ ul a:hover,
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 35rem;
+  height: 60vh;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -162,17 +166,32 @@ h1 span {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.card {
   flex: 1;
   background-color: rgb(52, 51, 51);
   margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .card img {
-  display: block;
-  align-items: center;
-  margin: 0 auto;
-  height: 27rem;
-  width: 27rem;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 .card p {
@@ -180,7 +199,7 @@ h1 span {
   font-size: 1.1rem;
 }
 
-#page:hover {
+.page:hover {
   box-shadow: 1px 1px 2px black, 0 0 25px rgb(109, 176, 169);
 }
 
@@ -221,7 +240,7 @@ a img {
   padding-right:1rem;
 }
 
-/*Route What we are*/
+/*Route What we do*/
 .description img {
   width: 35vw;
 }
@@ -241,6 +260,7 @@ a img {
   font-size: 2rem;
   align-content: center;
   font-family: 'Raleway', 'sans serif';
+  line-height: 3rem;
 }
 
 /*Form*/
@@ -344,14 +364,17 @@ button:hover {
     height: auto;
   }
 
+  .banner {
+    height: 50vh;
+    text-align: center;
+  }
+
   h1 {
-    font-size: 5rem;
-    padding-top: 5rem;
+    font-size: 6rem;
   }
 
   h1 p {
     font-size: 4rem;
-    margin-right: 5rem;
   }
 
   .cards, .description {
@@ -362,11 +385,6 @@ button:hover {
     width: 80vw;
     margin: 0 auto;
   }
-
-  hr {
-    display: none;
-  }
-
   }
 
 /* Smartphone */
@@ -384,6 +402,7 @@ button:hover {
       .banner {
         width: 100vw;
         text-align: center;
+        height: 40vh;
     }
 
       .card img {
@@ -416,10 +435,6 @@ button:hover {
 
     .nav-links {
       display: block;
-    }
-
-    hr {
-      display: none;
     }
 
     header .logo {
